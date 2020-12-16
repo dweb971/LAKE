@@ -1,0 +1,14 @@
+/*header*/
+body > header > div > div > div:nth-child(1){
+       background-color: purple;
+   }
+   body > div:nth-child(2) > div > div.col-2{
+       background-color: red;
+   }
+   body > footer > div > div > div.col-2{
+       background-color: #dd8037;
+   } 
+   h1{
+       font-size: 25px;
+   }
+  
