@@ -1,0 +1,17 @@
+body{
+    display: block;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none; 
+}
+nav ul {
+    display: flex;
+    text-align: center;
+    height: 50px;
+}
