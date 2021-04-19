@@ -19,5 +19,5 @@ h1{
      text-align: left;
  }
  ul li{
-     display: block;
+     display:flex;
  }

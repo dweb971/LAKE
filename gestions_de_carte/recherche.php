@@ -18,7 +18,7 @@
             <div class="col-12">
             <input type="text" class="form-control" id="" placeholder="recherche de plan">
           <div>
-          <button type="submit" class="btn btn-primary mb-2">rechercher</button>
+         <button><a href="plan.php">recherche</a></button>
           </div>
             </div>
         </div>
