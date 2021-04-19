@@ -1,0 +1,23 @@
+/*comentaire css*/
+/*body*/
+body{ 
+display: block;
+background-color: lightblue;
+
+}
+h1{
+
+    text-align: center;
+    color: black;
+}
+ div{
+     margin-top: 20px;
+     text-align: right;
+
+ }
+ label{
+     text-align: left;
+ }
+ ul li{
+     display: block;
+ }
