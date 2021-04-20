@@ -17,22 +17,20 @@
             <!-- Content here -->
             <header>
             <img src="img/logo hygitech.png" alt="logo">
+            <div class="container">
+            <div class="row">
+            <div class="col-12">
+            <div class="list-group">
+  <a href="#" class="list-group-item list-group-item-action active" aria-current="true">The current link item</a>
+  <a href="#" class="list-group-item list-group-item-action">A second link item</a>
+  <a href="#" class="list-group-item list-group-item-action">A third link item</a>
+  <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
+  <a href="#" class="list-group-item list-group-item-action disabled" tabindex="-1" aria-disabled="true">A disabled link item</a>
+</div>
+            </div>
+            </div>
+            </div>
 
-                <div class="container" id="lionel">
-                    <div class="row">
-                        <div class="col-sm">
-                            <div>
-                      
-                               </div>
-                               <img
-                               src="img/communes-Guadeloupe-971.jpg" 
-                               alt="commune" width="850px">
-                               <form>
-                                <div class="mb-2">
-                                  <label for="exampleInputEmail1" class="form-label"></label>
-                                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"> 
-                                 
-                                </div>
-                                <button type="button" class="btn btn-primary">Modifier</button>
+           
 <button type="button" class="btn btn-secondary">Imprimer</button>
 <button type="button" class="btn btn-success">Télécharger</button>

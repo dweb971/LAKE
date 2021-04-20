@@ -50,6 +50,12 @@
                                 </div>
                                 <button class="btn btn-primary" type="submit"  >ajouter</button>
                               </form>
+                              <div>
+<footer>
+  <p> Aéroport Sud le Raizet - 97139 Les Abymes
+Tél. : 0590 68 51 04 • Fax : 0590 68 44 10</p>  
+    </footer>
+</div>
                               <script>
 // Example starter JavaScript for disabling form submissions if there are invalid fields
 (function() {

@@ -23,3 +23,18 @@ button{
 margin-top: 20px;
 
 }
+div{
+    margin-top: 10px;
+}
+
+/*footer*/
+
+footer{
+    display: block;
+margin-top: 60px;
+text-align: center;
+
+}
+p{
+    margin-top: 60px;
+}

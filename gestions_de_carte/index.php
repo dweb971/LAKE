@@ -64,6 +64,12 @@
 </div>
 </div>
 </div>
+<div>
+<footer>
+  <p> Aéroport Sud le Raizet - 97139 Les Abymes
+Tél. : 0590 68 51 04 • Fax : 0590 68 44 10</p>  
+    </footer>
+</div>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
