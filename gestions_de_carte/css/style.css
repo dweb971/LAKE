@@ -1,23 +1,24 @@
-/*comentaire css*/
-/*body*/
-body{ 
-display: block;
-background-color: lightblue;
-
+/*  ceci est un commentaire pour ma feuille de style      */
+body {
+    width: 1275px;
+    height: auto;
+    background-color: lightblue;
 }
-h1{
+h1 {
 
     text-align: center;
-    color: black;
+    font-size: 40px;
+    font-weight: 600;
 }
- div{
-     margin-top: 20px;
-     text-align: right;
+a {
+    text-decoration: none;
+}
 
- }
- label{
-     text-align: left;
- }
- ul li{
-     display:flex;
- }
+button{
+
+    background-color: cyan;
+    border: 2px solid black;
+    border-radius: 10px;
+margin-top: 20px;
+
+}

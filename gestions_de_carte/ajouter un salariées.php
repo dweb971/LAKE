@@ -16,6 +16,8 @@
     <body>
             <!-- Content here -->
             <header>
+            <img src="img/logo hygitech.png" alt="logo">
+
                 <div class="container" id="lionel">
                     <div class="row">
                         <div class="col-sm">
@@ -42,52 +44,32 @@
                                     </div>
                                   </div>
                                 </div>
-                                <div class="form-row">
-                                  <div class="col-md-12">
-                                    <label for="validationCustom03"></label>
-                                    <input type="text" class="form-control" id="validationCustom03"  required>
-                                    <div class="invalid-feedback">
-                                      Please provide a valid city.
-                                    </div>
-                                  </div>
-                                  
-                                  <div class="col-12">
-                                    <label for="validationCustom04"></label>
-                                    <select class="custom-select" id="validationCustom04" required>
-                                      <option selected disabled value="">Choisir...</option>
-                                      <option>...</option>
-                                      <option>France</option>
-                                      <option>Guadeloupe</option>
-                                      <option>Martinique</option>
-                                    </select>
-                                    <div class="invalid-feedback">
-                                      Please select a valid state.
-                                    </div>
-                                  </div>
-                                  <div class="col-md-3 mb-3">
-                                    <label for="validationCustom05"></label>
-                                    <input type="text" class="form-control" id="validationCustom05" value="Code Postal" required>
-                                    <div class="invalid-feedback">
-                                      Please provide a valid zip.
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="form-group">
-                                  <div class="form-check">
-                                
-                                   
-                                    </label>
-                                    <div class="invalid-feedback">
-                                      You must agree before submitting.
+
                                     </div>
                                                </div>
                                 </div>
-                                <button class="btn btn-primary" type="submit"  >Valider</button>
+                                <button class="btn btn-primary" type="submit"  >ajouter</button>
                               </form>
-                              
                               <script>
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
                               
-                              </script>
         <!-- Optional JavaScript; choose one of the two! -->
         <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

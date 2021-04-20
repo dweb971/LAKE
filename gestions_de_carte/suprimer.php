@@ -16,11 +16,12 @@
 <body>
     <!-- Content here -->
     <header>
+    <img src="img/logo hygitech.png" alt="logo">
+
         <div class="container" id="lionel">
             <div class="row">
                 <div class="col-sm">
                     <div>
-                        <img src="top.png" alt="logo">
                         <div>
 
                         </div>

@@ -16,14 +16,14 @@
 <body>
 <img src="img/logo hygitech.png" alt="">
 
-    <h1>gestions des salaries</h1>
+    <h1>accueil</h1>
     <div class="container">
         <div class="row">
             <div class="col-6">
-            <button><a href="ajouter un salariées.php">ajouter un salariées</a></button>  
+            <button><a href="recherche.php">recherche une carte</a></button>  
             </div>
             <div class="col-6">
-<button><a href="suprimer.php">suprimer-supend</a></button>
+<button><a href="gestions des salaries.php">gestions des salariées</a></button>
               </div>
         </div>
     </div>
