@@ -8,21 +8,25 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 <link rel="stylesheet" href="css/style.css">
-    <title>recherche</title>
+    <title>résultas!</title>
   </head>
   <body>
   <img src="img/logo hygitech.png" alt="logo">
-    <h1>recherche de plan</h1>
+    <h1>résultas</h1>
     <div class="container">
-        <div class="row">
-            <div class="col-12">
-            <input type="text" class="form-control" id="" placeholder="recherche de plan">
-          <div>
-          <a class="btn btn-primary" href="resultas.php" role="button">recherche</a>
-
-          </div>
-            </div>
-        </div>
+    <div class="row">
+    <div class="col-12">
+    <div class="list-group">
+  <a href="plan.php" class="list-group-item list-group-item-action ">
+    plan de jarry 
+  </a>
+  <a href="plan.php" class="list-group-item list-group-item-action">plan2</a>
+  <a href="plan.php" class="list-group-item list-group-item-action">plan3</a>
+  <a href="plan.php" class="list-group-item list-group-item-action">plan4</a>
+  <a href="plan.php" class="list-group-item list-group-item-action disabled" tabindex="-1" aria-disabled="true">plan5</a>
+</div>
+    </div>
+    </div>
     </div>
     <div>
 <footer>
@@ -30,7 +34,6 @@
 Tél. : 0590 68 51 04 • Fax : 0590 68 44 10</p>  
     </footer>
 </div>
-
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->

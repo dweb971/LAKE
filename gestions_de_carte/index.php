@@ -13,29 +13,29 @@
   <body>
     <img src="img/logo hygitech.png" alt="logo">
     <h1>connection</h1>
+    <img src="img/login icon.png" class="img-thumbnail" alt="...">
 <div class="container">
 <div class="row">
 <div class="col-4">
 
 </div>
 <div class="col-4">
-<form class="needs-validation" novalidate>
-  <div class="form-group">
-    <label for="login">se connecter</label>
-    <input type="login" class="form-control" id="connectGp"required>
+<form method="POST" action="accueil.php" class="needs-validation" novalidate>        
 
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required placeholder="email">
+    <div class="valid-feedback">Looks good!</div>
+  <div class="invalid-feedback">Indiquer votre email</div>
   </div>
   <div class="form-group">
-    <label for="exampleInputPassword1">Mot de passe </label>
-    <input name="motdepasse"type="password" class="form-control" id="password" required maxlength="10" minlength="5">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" required placeholder="mot de passe"  minlength="5">
     <div class="valid-feedback">Looks good!</div>
   <div class="invalid-feedback">Indiquer votre Mot de passe!!!</div>
-
-<button><a href="accueil.php">valider</a></button>
   </div>
-  
 
-  
+  <button type="submit" class="btn btn-primary">valider</button>
 </form>
 <script>
 // Example starter JavaScript for disabling form submissions if there are invalid fields

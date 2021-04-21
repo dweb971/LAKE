@@ -17,46 +17,49 @@
             <!-- Content here -->
             <header>
             <img src="img/logo hygitech.png" alt="logo">
+<div class="container">
+<div class="row">
+<div class="col-12">
+<form  class="needs-validation" novalidate>        
+  <form>
+          <div class="form-group">
+    <label for="exampleInputname">Nom</label>
+    <input name="nom" type="text" class="form-control" id="" aria-describedby="nameHelp" required maxlength="1000" minlength="1">
+    <div class="valid-feedback">Looks good!</div>
+  <div class="invalid-feedback">Indiquer votre NOM!!!</div>
+    <small id="" class="form-text text-muted">Écrire son nom </small>
+  
+  </div>
 
-                <div class="container" id="lionel">
-                    <div class="row">
-                        <div class="col-sm">
-                            <div>
-                                <img
-                                    src="top.png" 
-                                    alt="">
-                                    <h2>Ajouter un salariés</h2>
-                            </div>
-                            <form class="needs-validation" novalidate>
-                                <div class="form-row">
-                                  <div class="col-md-12">
-                                    <label for="validationCustom01"></label>
-                                    <input type="text" class="form-control" id="validationCustom01" value="Nom" required>
-                                    <div class="valid-feedback">
-                                      Looks good!
-                                    </div>
-                                  </div>
-                                  <div class="col-12">
-                                    <label for="validationCustom02"></label>
-                                    <input type="text" class="form-control" id="validationCustom02" value="Prénom" required>
-                                    <div class="valid-feedback">
-                                      Looks good!
-                                    </div>
-                                  </div>
-                                </div>
+  <div class="form-group">
+    <label for="exampleInputprenom">Prénom</label>
+   <input  name="prenom" type="text" class="form-control" id="" aria-describedby="prenomlHelp" required maxlength="1984" minlength="4">
+   <div class="valid-feedback">Looks good!</div>
+  <div class="invalid-feedback">Indiquer votre Prénom!!!</div>
+    <small id="" class="form-text text-muted">Écrire son prénom.</small>
+    
+  </div>
+  
 
-                                    </div>
-                                               </div>
-                                </div>
-                                <button class="btn btn-primary" type="submit"  >ajouter</button>
-                              </form>
-                              <div>
-<footer>
-  <p> Aéroport Sud le Raizet - 97139 Les Abymes
-Tél. : 0590 68 51 04 • Fax : 0590 68 44 10</p>  
-    </footer>
-</div>
-                              <script>
+  <div class="form-group">
+    <label for="exampleInputEmail1"> Adresse Email</label>
+    <input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required maxlength="5977"minelength="7">
+    <div class="valid-feedback">Looks good!</div>
+  <div class="invalid-feedback">Indiquer votre Email!!!</div>
+    <small id="emailHelp" class="form-text text-muted">Renseigner votre Email.</small>
+  </div>
+
+  <div class="form-group">
+    <label for="Inputtel">Téléphone</label>
+    <input name="tel" type="text" class="form-control " id="" aria-describedby="tel" required>
+    <div class="valid-feedback">Looks good!</div>
+  <div class="invalid-feedback">Indiquer votre Téléphone!!!</div>
+<small id="" class="form-text text-muted">.</small>
+  </div>
+  
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+<script>
 // Example starter JavaScript for disabling form submissions if there are invalid fields
 (function() {
   'use strict';
@@ -75,6 +78,17 @@ Tél. : 0590 68 51 04 • Fax : 0590 68 44 10</p>
     });
   }, false);
 })();
+</script>
+
+</div>
+</div>
+</div>
+
+<footer>
+  <p> Aéroport Sud le Raizet - 97139 Les Abymes
+Tél. : 0590 68 51 04 • Fax : 0590 68 44 10</p>  
+    </footer>
+</div>
                               
         <!-- Optional JavaScript; choose one of the two! -->
         <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->

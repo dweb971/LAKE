@@ -20,14 +20,15 @@
     <div class="container">
         <div class="row">
             <div class="col-6">
-            <button><a href="ajouter un salariées.php">ajouter un salariées</a></button>  
+            <a class="btn btn-primary" href="ajouter un salariées.php" role="button">ajouter un salariées</a>
             </div>
             <div class="col-6">
-<button><a href="suprimer.php">suprimer-supend</a></button>
+            <a class="btn btn-primary" href="suprimer.php" role="button">suprimer-supend</a>
               </div>
         </div>
     </div>
     <div>
+    
 <footer>
   <p> Aéroport Sud le Raizet - 97139 Les Abymes
 Tél. : 0590 68 51 04 • Fax : 0590 68 44 10</p>  

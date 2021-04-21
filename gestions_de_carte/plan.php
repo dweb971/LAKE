@@ -16,21 +16,19 @@
     <body>
             <!-- Content here -->
             <header>
-            <img src="img/logo hygitech.png" alt="logo">
-            <div class="container">
-            <div class="row">
-            <div class="col-12">
-            <div class="list-group">
-  <a href="#" class="list-group-item list-group-item-action active" aria-current="true">The current link item</a>
-  <a href="#" class="list-group-item list-group-item-action">A second link item</a>
-  <a href="#" class="list-group-item list-group-item-action">A third link item</a>
-  <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
-  <a href="#" class="list-group-item list-group-item-action disabled" tabindex="-1" aria-disabled="true">A disabled link item</a>
-</div>
-            </div>
-            </div>
-            </div>
-
-           
-<button type="button" class="btn btn-secondary">Imprimer</button>
+                <div class="container" id="lionel">
+                    <div class="row">
+                        <div class="col-sm">
+                            <div>
+                                <img
+                                    src="img/logo hygitech.png" alt="logo">
+                               </div>
+                               <img
+                               src="img/plan de jarry.png" 
+                               alt="commune" width="850px">
+                               <form>
+                                <div class="mb-2">
+                                <button type="button" class="btn btn-secondary">Imprimer</button>
 <button type="button" class="btn btn-success">Télécharger</button>
+                                 
+                                </div>

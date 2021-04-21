@@ -20,13 +20,35 @@
     <div class="container">
         <div class="row">
             <div class="col-6">
-            <button><a href="recherche.php">recherche une carte</a></button>  
+            <a class="btn btn-primary" href="recherche.php" role="button">recherche</a>
+
             </div>
             <div class="col-6">
-<button><a href="gestions des salaries.php">gestions des salariées</a></button>
+            <a class="btn btn-primary" href="gestions des salaries.php" role="button">gestions des salariées</a>
+
               </div>
         </div>
+<div class="container">
+<div class="row">
+<div class="col-12">
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+        <img src="img/canalisation1.jpg" class="d-block w-100" alt="">
     </div>
+    <div class="carousel-item">
+      <img src="img/canalisation2.jpg" class="d-block w-100" alt="">
+    </div>
+    <div class="carousel-item">
+      <img src="img/canalisation3.png" class="d-block w-100" alt="">
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+
 <div>
 <footer>
   <p> Aéroport Sud le Raizet - 97139 Les Abymes
