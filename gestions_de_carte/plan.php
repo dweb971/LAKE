@@ -28,6 +28,8 @@
                                alt="commune" width="850px">
                                <form>
                                 <div class="mb-2">
+                                <button type="button" class="btn btn-primary">modifier</button>
+
                                 <button type="button" class="btn btn-secondary">Imprimer</button>
 <button type="button" class="btn btn-success">Télécharger</button>
                                  

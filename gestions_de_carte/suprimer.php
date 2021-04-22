@@ -26,7 +26,7 @@
 
                         </div>
                         <h2>Suprimer un salaries/Suspendre l'accès</h2>
-                        <table class="table">
+                        <table class="table" id="liste">
                             <thead class="thead-dark">
                                 <tr>
                                     <th scope="col">#</th>
