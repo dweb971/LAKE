@@ -125,6 +125,7 @@ $(document).ready(function(){
 		var index = $("table tbody tr:last-child").index();
         var row = '<tr>' +
             '<td><input type="text" class="form-control" name="name" id="name"></td>' +
+            '<td><input type="text" class="form-control" name="name" id="name"></td>' +
             '<td><input type="text" class="form-control" name="department" id="department"></td>' +
             '<td><input type="text" class="form-control" name="phone" id="phone"></td>' +
 			'<td>' + actions + '</td>' +
@@ -185,7 +186,8 @@ $(document).ready(function(){
             <table class="table table-bordered">
                 <thead>
                     <tr>
-                        <th>Nom-Prenom</th>
+                        <th>Nom</th>
+                        <th>prenom</th>
                         <th>Email</th>
                         <th>Téléphone</th>
                         <th>Actions</th>
@@ -193,7 +195,8 @@ $(document).ready(function(){
                 </thead>
                 <tbody>
                     <tr>
-                        <td>John Doe</td>
+                        <td>John</td>
+                        <td>Doe</td>
                         <td>lid2@gmail.com</td>
                         <td>(171) 555-2222</td>
                         <td>
@@ -203,8 +206,9 @@ $(document).ready(function(){
                         </td>
                     </tr>
                     <tr>
-                        <td>Peter Parker</td>
-                        <td>Customer Service</td>
+                        <td>Peter</td>
+                        <td>Parker</td>
+                        <td>lid2@gmail.com</td>
                         <td>(313) 555-5735</td>
                         <td>
                             <a class="add" title="Add" data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
@@ -213,8 +217,9 @@ $(document).ready(function(){
                         </td>
                     </tr>
                     <tr>
-                        <td>Fran Wilson</td>
-                        <td>Human Resources</td>
+                        <td>Fran </td>
+                        <td>Wilson</td>
+                        <td>lid2@gmail.com</td>
                         <td>(503) 555-9931</td>
                         <td>
                             <a class="add" title="Add" data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
