@@ -57,8 +57,28 @@
             VALUES ('".$this->get_nom()."', '".$this->get_prenom()."', '".$this->get_tel()."', '".$this->get_naissance()."', '".$dates."', '".$dates."')";
 
             $dbh = $this->get_connectDB()->query($reqI);
+            $idprofil=$this->get_connectDB()->lastInsertId();
+            if ($idprofil<0) {
+                # code...
+                //error
+            } else {
+                # code...
+//insert into user
+$repU="INSERT INTO user (idprofil, login, password, dateAdd, dateUpdate)
+VALUES ('".$idprofil."','".$this->get_login()."','".$this->get_pass()."','".$dates."','".$dates."' )";
+            $dbh = $this->get_connectDB()->query($reqU);
+            if ($dbh->rowCount()===1) {
+                # code...
+//insert ok
+$_SESSION["msg"] = "<p>L'ajout user $idprofil est réussi.<p>";
 
-            print_r($dbh);
+
+            }
+
+            }
+            
+
+          //print_r($dbh);
         }
 
 
