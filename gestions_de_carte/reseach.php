@@ -11,8 +11,7 @@
     <title>recherche</title>
   </head>
   <body>
-  <a href="accueil.php"><img src="img/logo hygitech.png" alt=""></a>
-
+  <img src="img/logo hygitech.png" alt="logo">
     <h1>recherche de plan</h1>
     <div class="container">
         <div class="row">

@@ -14,8 +14,7 @@
 </head>
 
 <body>
-    <img src="img/logo hygitech.png" alt="">
-
+<a href="accueil.php"><img src="img/logo hygitech.png" alt=""></a>
     <h1>gestions des salaries</h1>
 
     <!DOCTYPE html>
@@ -144,7 +143,7 @@
                 $(this).attr("disabled", "disabled");
                 var index = $("table tbody tr:last-child").index();
                 var row = '<tr>' +
-                    '<td><input type="text" class="form-control" name="name" id="name"></td>' +
+                     '<td><input type="text" class="form-control" name="name" id="name"></td>' +
                     '<td><input type="text" class="form-control" name="name" id="name"></td>' +
                     '<td><input type="text" class="form-control" name="department" id="department"></td>' +
                     '<td><input type="text" class="form-control" name="phone" id="phone"></td>' +

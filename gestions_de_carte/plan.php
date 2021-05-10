@@ -30,7 +30,7 @@
                                 <div class="mb-2">
                                 <button type="button" class="btn btn-primary">modifier</button>
 
-                                <button type="button" class="btn btn-secondary">Imprimer</button>
+                                <button type="button" class="btn btn-primary" onclick="window.print()">Inprimer</button>
 <button type="button" class="btn btn-success">Télécharger</button>
                                  
                                 </div>
