@@ -1,13 +1,39 @@
-<body class="bg-light">
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Colorlib Templates">
+    <meta name="author" content="Colorlib">
+    <meta name="keywords" content="Colorlib Templates">
+
+    <!-- Title Page-->
+    <title>Etape2</title>
+
+    <!-- Icons font CSS-->
+    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <!-- Font special for pages-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+
+    <!-- Vendor CSS-->
+    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="css/main.css" rel="stylesheet" media="all">
+</head>
+  <body class="bg-light">
     
-    <div class="container">
-      <div class="py-5 text-center">
-        <h2>Formulaire-lake</h2>
-      </div>
+    <div class="page-wrapper bg-gra-03 p-t-45 p-b-50">
+      <div class="wrapper wrapper--w790">
+      <div class="card card-5">
+                <div class="card-heading">
+                <h2 class="title">Formulaire-lake</h2>
+                </div>
      <div class="container">
          <div class="row-3">
              <dic class="col-md-4">
-             <form method="POST" action="traitement.php" class="needs-validation" novalidate>        
+             <form method="POST" action="ajouter_salarier.php" class="needs-validation" novalidate>        
       <form>
    <div class="form-group">
    <select class="custom-select" name="civFrm"  maxlength="2">
@@ -89,6 +115,7 @@
       <div class="invalid-feedback">Indiquer votre Ville!!!</div>
   
       </div>
+     
       
       <div class="form-group">
    <select class="custom-select" maxlength="60">
@@ -105,6 +132,7 @@
         <label class="form-check-label" for="exampleCheck1">Check me out</label>
       </div>
       <button type="submit" class="btn btn-primary">Submit</button>
+
     </form>
     <script>
     // Example starter JavaScript for disabling form submissions if there are invalid fields
