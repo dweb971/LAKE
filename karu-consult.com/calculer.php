@@ -58,4 +58,4 @@ include("includes/head.php");
 <script src="js/calculer.js"></script>
 <?php
     include("includes/footer.php");
-    ?>
+ ?>

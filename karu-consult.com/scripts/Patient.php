@@ -2,7 +2,7 @@
 
 class Patient
 {
-
+    
     //proprietes -> variables
     private $_daterdv;
     private $_heure;
@@ -13,40 +13,87 @@ class Patient
     private $_email;
     private $_visite;  // raison de la visite
     private $_patient; // patient du cabinet
-
-    private $_DBConnect;
-
+    private $_DBConnect; 
 
 
 
 
     // methodes
     public function __construct($connectOBJ){
-        //INSTANCE PDO
+       // instance PDO
+              
+    $this->set_DBConnect($connectOBJ->pdo);
 
 
 
 
-      }
-public function prise_rdv(array $data)
-{ 
-   // affectation donnees
-   $this->set_civilite($this->nettoyer($data["civFrm"]));
-   $this->set_prenom(ucfirst($this->nettoyer($data["prenomFrm"])));
-   $this->set_nom(strtoupper($this->nettoyer($data["nomFrm"])));
-   $this->set_tel($this->nettoyer($data["telFrm"]));
-   $this->set_email(strtolower($this->nettoyer($data["emailFrm"])));
-   $this->set_visite($this->nettoyer($data["visiteFrm"]));
-   $this->set_patient($this->nettoyer($data["patientFrm"]));
-   $this->set_daterdv($this->nettoyer($data["rdvFrm"]));
-   $this->set_heure($this->nettoyer($data["heureFrm"]));
 
-} //fin prise de rdv    }
 
-    public function insert_data($pdo){
+    }
+
+
+    public function prise_rdv(array $data){
+
+       
+
+         // affectation donnees
+         $this->set_civilite($this->nettoyer($data["civFrm"]));
+         $this->set_prenom(ucfirst($this->nettoyer($data["prenomFrm"])));
+         $this->set_nom(strtoupper($this->nettoyer($data["nomFrm"])));
+         $this->set_tel($this->nettoyer($data["telFrm"]));
+         $this->set_email(strtolower($this->nettoyer($data["emailFrm"])));
+         $this->set_visite($this->nettoyer($data["visiteFrm"]));
+         
+         #test patient cabinet o/n
+         if (!isset($data["patientFrm"])) {
+             $this->set_patient(0);
+         }
+         else{
+          $this->set_patient($this->nettoyer($data["patientFrm"]));  
+         } #end
+
+         
+         $this->set_daterdv($this->nettoyer($data["rdvFrm"]));
+         $this->set_heure($this->nettoyer($data["heureFrm"]));
+ 
+         // test sur telephone
+         //echo $this->insert_data();
+        $dates= date("Y-m-d H:i:s");
+        // requet insert
+        $requete = "INSERT INTO patient (civilite, nom, prenom, telephone, email, dateAdd, dateUpdate )
+        VALUES ('".$this->get_civilite()."','".$this->get_nom()."', '".$this->get_prenom()."', '".$this->get_tel()."', '".$this->get_email()."', '".$dates."', '".$dates."')";
+
+        $dbh = $this->get_DBConnect()->query($requete);
+
+        $idPatient = $this->get_DBConnect()->lastInsertId();
+
+        if (isset($idPatient)) {
+           #insert rdv
+           $reqIR="INSERT INTO rendez_vous (idPatient, visite, patient, date_rdv, heure_rdv, dateAdd, dateUpdate )
+           VALUES ('".$idPatient."','".$this->get_visite()."', '".$this->get_patient()."', '".$this->get_daterdv()."', '".$this->get_heure()."', '".$dates."', '".$dates."')";
+
+
+            $dbh = $this->get_DBConnect()->query($reqIR);
+
+            print_r($dbh);
+
+        }
+        
+        else{
+            echo"erreur select idpatient";
+
+        }
+
+        print_r($idPatient);
+
+       
+    }
+
+
+    public function insert_data(){
 
         if( preg_match('/[0-9]+/', $this->get_tel() ) == true ){
-
+            
             return $this->get_tel();
 
         } else {
@@ -64,7 +111,7 @@ public function prise_rdv(array $data)
 
     }
 
-
+  
 
 
 
@@ -249,6 +296,26 @@ public function prise_rdv(array $data)
     public function set_patient($_patient)
     {
         $this->_patient = $_patient;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of _DBConnect
+     */ 
+    public function get_DBConnect()
+    {
+        return $this->_DBConnect;
+    }
+
+    /**
+     * Set the value of _DBConnect
+     *
+     * @return  self
+     */ 
+    public function set_DBConnect($_DBConnect)
+    {
+        $this->_DBConnect = $_DBConnect;
 
         return $this;
     }
