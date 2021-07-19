@@ -1,21 +1,3 @@
-<!doctype html>
-<html lang="en">
-
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-    <title>gestions des salaries</title>
-</head>
-
-<body>
-<a href="accueil.php"><img src="img/logo hygitech.png" alt=""></a>
-    <h1>gestions des salaries</h1>
 
     <!DOCTYPE html>
     <html lang="en">
@@ -156,6 +138,7 @@
             // Add row on add button click
             $(document).on("click", ".add", function() {
                 var empty = false;
+                let datas = [];
                 var input = $(this).parents("tr").find('input[type="text"]');
                 input.each(function() {
                     if (!$(this).val()) {
@@ -164,7 +147,13 @@
                     } else {
                         $(this).removeClass("error");
                     }
+                
+                datas.push($(this).val());
+                    
                 });
+
+                add_array_data(datas);
+
                 $(this).parents("tr").find(".error").first().focus();
                 if (!empty) {
                     input.each(function() {
@@ -182,23 +171,83 @@
                 });
                 $(this).parents("tr").find(".add, .edit").toggle();
                 $(".add-new").attr("disabled", "disabled");
+
             });
             // Delete row on delete button click
             $(document).on("click", ".delete", function() {
                 $(this).parents("tr").remove();
                 $(".add-new").removeAttr("disabled");
             });
+
+           
         });
+
+       
+       function add_array_data(datas)
+        {
+
+            // variable tableau qui stock les datas
+            httpRequest = new XMLHttpRequest();
+
+            // requete vers serveur
+            httpRequest.open('POST', 'https://gestions_de_carte/traitement.php');
+
+            // changer le type MIME de la requête pour methode POST
+            httpRequest.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+
+            httpRequest.send("datas="+encodeURIComponent(datas));
+
+            // traitement de la reponse serveur
+            httpRequest.onreadystatechange = function(){
+
+                if (httpRequest.readyState === XMLHttpRequest.DONE) {
+                        // tout va bien, la réponse a été reçue
+                        
+                        if(httpRequest.status === 200) {
+                            // parfait !
+
+                            if(httpRequest.responseText != ''){
+                                alert(httpRequest.responseText);
+
+                    } else {
+                    
+                    }
+
+
+                } else {
+                    // il y a eu un problème avec la requête,
+                    // par exemple la réponse peut être un code 404 (Non trouvée)
+                    // ou 500 (Erreur interne au serveur)
+
+                    // cacher bloc erreur
+
+                }
+
+
+
+
+            } else {
+                // pas encore prête
+            }
+
+            };
+
+            
+        }
+
+
         </script>
     </head>
 
     <body>
+    <a href="accueil.php"><img src="img/logo hygitech.png" alt=""></a>
         <div class="container-lg">
             <div class="table-responsive">
                 <div class="table-wrapper">
                     <div class="table-title">
                         <div class="row">
                             <div class="col-sm-8">
+                            <h1>gestions des salaries</h1>
                                 <h2> <b></b></h2>
                             </div>
                             <div class="col-sm-4">
@@ -262,6 +311,7 @@
                             </tr>
                         </tbody>
                     </table>
+
                 </div>
             </div>
         </div>

@@ -24,7 +24,7 @@
 
             </div>
             <div class="col-6">
-            <a class="btn btn-primary" href="gestions des salaries.php" role="button">gestions des salariées</a>
+            <a class="btn btn-primary" href="gestions_des_salaries.php" role="button">gestions des salariées</a>
 
               </div>
         </div>
